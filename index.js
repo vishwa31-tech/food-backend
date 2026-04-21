@@ -1,27 +1,22 @@
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-const connectDB = require('./config/db');
+const express = require("express");
+const dotenv = require("dotenv");
+const cors = require("cors");
+const orderRoutes = require("./routes/orderRoutes");
 
-// Connect to Database
-connectDB();
+dotenv.config();
+
+const connectDB = require("./config/db"); // ✅ only here
 
 const app = express();
-const PORT = process.env.PORT || 5000;
 
-// Middleware
-app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174'],
-  credentials: true,
-}));
+app.use(cors());
 app.use(express.json());
 
-// Routes
-const ordersRouter = require('./routes/orders');
-app.use('/api/orders', ordersRouter);
+app.use("/api", orderRoutes);
 
-// Start Server
-app.listen(PORT, () => {
-  console.log(`🚀 Backend Server running on http://localhost:${PORT}`);
+connectDB().then(() => {
+  console.log("ENV TEST:", process.env.MONGODB_URI);
+  app.listen(5000, () => {
+    console.log("Server running 🚀");
+  });
 });
-
