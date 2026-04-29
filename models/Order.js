@@ -30,6 +30,12 @@ const orderSchema = new mongoose.Schema(
     totalAmount: {
       type: Number,
       required: true
+    },
+    rating: {
+      type: Number,
+      min: 1,
+      max: 5,
+      default: null
     }
   },
   { timestamps: true }
