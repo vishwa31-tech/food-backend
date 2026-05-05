@@ -31,6 +31,58 @@ const orderSchema = new mongoose.Schema(
       type: Number,
       required: true
     },
+    branchId: {
+      type: Number,
+      default: null
+    },
+    branchName: {
+      type: String,
+      default: ""
+    },
+    deliveryAddress: {
+      type: String,
+      default: ""
+    },
+    voucherCode: {
+      type: String,
+      default: ""
+    },
+    discountAmount: {
+      type: Number,
+      default: 0
+    },
+    customerName: {
+      type: String,
+      default: ""
+    },
+    customerEmail: {
+      type: String,
+      default: ""
+    },
+    customerPhone: {
+      type: String,
+      default: ""
+    },
+    paymentMethod: {
+      type: String,
+      default: "cod"
+    },
+    paymentStatus: {
+      type: String,
+      default: "pending"
+    },
+    razorpayOrderId: {
+      type: String,
+      default: ""
+    },
+    razorpayPaymentId: {
+      type: String,
+      default: ""
+    },
+    razorpaySignature: {
+      type: String,
+      default: ""
+    },
     rating: {
       type: Number,
       min: 1,

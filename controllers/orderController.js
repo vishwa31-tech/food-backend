@@ -2,11 +2,40 @@ const Order = require("../models/Order.js"); // ✅ MUST BE EXACT
 
 exports.createOrder = async (req, res) => {
   try {
-    const { items, totalAmount } = req.body;
+    const {
+      items,
+      totalAmount,
+      branchId,
+      branchName,
+      deliveryAddress,
+      voucherCode,
+      discountAmount,
+      customerName,
+      customerEmail,
+      customerPhone,
+      paymentMethod
+    } = req.body || {};
+
+    if (paymentMethod && paymentMethod !== "cod") {
+      return res.status(400).json({
+        success: false,
+        message: "Use Razorpay endpoints for online payments"
+      });
+    }
 
     const order = new Order({
       items,
-      totalAmount
+      totalAmount,
+      paymentMethod: "cod",
+      paymentStatus: "cod",
+      branchId: branchId ?? null,
+      branchName: branchName ?? "",
+      deliveryAddress: deliveryAddress ?? "",
+      voucherCode: voucherCode ?? "",
+      discountAmount: Number.isFinite(Number(discountAmount)) ? Number(discountAmount) : 0,
+      customerName: customerName ?? "",
+      customerEmail: customerEmail ?? "",
+      customerPhone: customerPhone ?? ""
     });
 
     await order.save();

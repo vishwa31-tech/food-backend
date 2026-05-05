@@ -1,0 +1,315 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.6.2
+2 info using node@v24.12.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\vishw\OneDrive\Desktop\newz\server\.npmrc
+5 silly config load:file:C:\Users\vishw\.npmrc
+6 silly config load:file:C:\Users\vishw\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:C:\Users\vishw\OneDrive\Desktop\newz\server\.npm-cache\_logs\2026-05-05T06_59_53_152Z-
+10 verbose logfile C:\Users\vishw\OneDrive\Desktop\newz\server\.npm-cache\_logs\2026-05-05T06_59_53_152Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly fetch manifest razorpay@^2.9.6
+15 silly packumentCache full:https://registry.npmjs.org/razorpay cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules/anymatch
+17 http fetch GET 200 https://registry.npmjs.org/razorpay 268ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/razorpay set size:undefined disposed:false
+19 silly placeDep ROOT razorpay@2.9.6 OK for: server@1.0.0 want: ^2.9.6
+20 silly reify moves {}
+21 silly audit bulk request {
+21 silly audit   '@mongodb-js/saslprep': [ '1.4.6' ],
+21 silly audit   '@types/webidl-conversions': [ '7.0.3' ],
+21 silly audit   '@types/whatwg-url': [ '13.0.0' ],
+21 silly audit   accepts: [ '2.0.0' ],
+21 silly audit   anymatch: [ '3.1.3' ],
+21 silly audit   asynckit: [ '0.4.0' ],
+21 silly audit   axios: [ '1.14.0' ],
+21 silly audit   'balanced-match': [ '4.0.4' ],
+21 silly audit   'binary-extensions': [ '2.3.0' ],
+21 silly audit   'body-parser': [ '2.2.2' ],
+21 silly audit   'brace-expansion': [ '5.0.5' ],
+21 silly audit   braces: [ '3.0.3' ],
+21 silly audit   bson: [ '7.2.0' ],
+21 silly audit   bytes: [ '3.1.2' ],
+21 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+21 silly audit   'call-bound': [ '1.0.4' ],
+21 silly audit   chokidar: [ '3.6.0' ],
+21 silly audit   'combined-stream': [ '1.0.8' ],
+21 silly audit   'content-disposition': [ '1.0.1' ],
+21 silly audit   'content-type': [ '1.0.5' ],
+21 silly audit   cookie: [ '0.7.2' ],
+21 silly audit   'cookie-signature': [ '1.2.2' ],
+21 silly audit   cors: [ '2.8.6' ],
+21 silly audit   debug: [ '4.4.3' ],
+21 silly audit   'delayed-stream': [ '1.0.0' ],
+21 silly audit   depd: [ '2.0.0' ],
+21 silly audit   dotenv: [ '17.4.1' ],
+21 silly audit   'dunder-proto': [ '1.0.1' ],
+21 silly audit   'ee-first': [ '1.1.1' ],
+21 silly audit   encodeurl: [ '2.0.0' ],
+21 silly audit   'es-define-property': [ '1.0.1' ],
+21 silly audit   'es-errors': [ '1.3.0' ],
+21 silly audit   'es-object-atoms': [ '1.1.1' ],
+21 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+21 silly audit   'escape-html': [ '1.0.3' ],
+21 silly audit   etag: [ '1.8.1' ],
+21 silly audit   express: [ '5.2.1' ],
+21 silly audit   'fill-range': [ '7.1.1' ],
+21 silly audit   finalhandler: [ '2.1.1' ],
+21 silly audit   'follow-redirects': [ '1.15.11' ],
+21 silly audit   'form-data': [ '4.0.5' ],
+21 silly audit   'mime-db': [ '1.52.0', '1.54.0' ],
+21 silly audit   'mime-types': [ '2.1.35', '3.0.2' ],
+21 silly audit   forwarded: [ '0.2.0' ],
+21 silly audit   fresh: [ '2.0.0' ],
+21 silly audit   fsevents: [ '2.3.3' ],
+21 silly audit   'function-bind': [ '1.1.2' ],
+21 silly audit   'get-intrinsic': [ '1.3.0' ],
+21 silly audit   'get-proto': [ '1.0.1' ],
+21 silly audit   'glob-parent': [ '5.1.2' ],
+21 silly audit   gopd: [ '1.2.0' ],
+21 silly audit   'has-flag': [ '3.0.0' ],
+21 silly audit   'has-symbols': [ '1.1.0' ],
+21 silly audit   'has-tostringtag': [ '1.0.2' ],
+21 silly audit   hasown: [ '2.0.2' ],
+21 silly audit   'http-errors': [ '2.0.1' ],
+21 silly audit   'iconv-lite': [ '0.7.2' ],
+21 silly audit   'ignore-by-default': [ '1.0.1' ],
+21 silly audit   inherits: [ '2.0.4' ],
+21 silly audit   'ipaddr.js': [ '1.9.1' ],
+21 silly audit   'is-binary-path': [ '2.1.0' ],
+21 silly audit   'is-extglob': [ '2.1.1' ],
+21 silly audit   'is-glob': [ '4.0.3' ],
+21 silly audit   'is-number': [ '7.0.0' ],
+21 silly audit   'is-promise': [ '4.0.0' ],
+21 silly audit   kareem: [ '3.2.0' ],
+21 silly audit   'math-intrinsics': [ '1.1.0' ],
+21 silly audit   'media-typer': [ '1.1.0' ],
+21 silly audit   'memory-pager': [ '1.5.0' ],
+21 silly audit   'merge-descriptors': [ '2.0.0' ],
+21 silly audit   minimatch: [ '10.2.5' ],
+21 silly audit   mongodb: [ '7.1.1' ],
+21 silly audit   'mongodb-connection-string-url': [ '7.0.1' ],
+21 silly audit   mongoose: [ '9.3.3' ],
+21 silly audit   mpath: [ '0.9.0' ],
+21 silly audit   mquery: [ '6.0.0' ],
+21 silly audit   ms: [ '2.1.3' ],
+21 silly audit   negotiator: [ '1.0.0' ],
+21 silly audit   nodemon: [ '3.1.14' ],
+21 silly audit   'normalize-path': [ '3.0.0' ],
+21 silly audit   'object-assign': [ '4.1.1' ],
+21 silly audit   'object-inspect': [ '1.13.4' ],
+21 silly audit   'on-finished': [ '2.4.1' ],
+21 silly audit   once: [ '1.4.0' ],
+21 silly audit   parseurl: [ '1.3.3' ],
+21 silly audit   'path-to-regexp': [ '8.4.1' ],
+21 silly audit   picomatch: [ '2.3.2' ],
+21 silly audit   'proxy-addr': [ '2.0.7' ],
+21 silly audit   'proxy-from-env': [ '2.1.0' ],
+21 silly audit   'pstree.remy': [ '1.1.8' ],
+21 silly audit   punycode: [ '2.3.1' ],
+21 silly audit   qs: [ '6.15.0' ],
+21 silly audit   'range-parser': [ '1.2.1' ],
+21 silly audit   'raw-body': [ '3.0.2' ],
+21 silly audit   readdirp: [ '3.6.0' ],
+21 silly audit   router: [ '2.2.0' ],
+21 silly audit   'safer-buffer': [ '2.1.2' ],
+21 silly audit   semver: [ '7.7.4' ],
+21 silly audit   send: [ '1.2.1' ],
+21 silly audit   'serve-static': [ '2.2.1' ],
+21 silly audit   setprototypeof: [ '1.2.0' ],
+21 silly audit   'side-channel': [ '1.1.0' ],
+21 silly audit   'side-channel-list': [ '1.0.0' ],
+21 silly audit   'side-channel-map': [ '1.0.1' ],
+21 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+21 silly audit   sift: [ '17.1.3' ],
+21 silly audit   'simple-update-notifier': [ '2.0.0' ],
+21 silly audit   'sparse-bitfield': [ '3.0.3' ],
+21 silly audit   statuses: [ '2.0.2' ],
+21 silly audit   'supports-color': [ '5.5.0' ],
+21 silly audit   'to-regex-range': [ '5.0.1' ],
+21 silly audit   toidentifier: [ '1.0.1' ],
+21 silly audit   touch: [ '3.1.1' ],
+21 silly audit   tr46: [ '5.1.1' ],
+21 silly audit   'type-is': [ '2.0.1' ],
+21 silly audit   undefsafe: [ '2.0.5' ],
+21 silly audit   unpipe: [ '1.0.0' ],
+21 silly audit   vary: [ '1.1.2' ],
+21 silly audit   'webidl-conversions': [ '7.0.0' ],
+21 silly audit   'whatwg-url': [ '14.2.0' ],
+21 silly audit   wrappy: [ '1.0.2' ],
+21 silly audit   razorpay: [ '2.9.6' ]
+21 silly audit }
+22 http cache razorpay@https://registry.npmjs.org/razorpay/-/razorpay-2.9.6.tgz 0ms (cache hit)
+23 silly tarball no local data for razorpay@https://registry.npmjs.org/razorpay/-/razorpay-2.9.6.tgz. Extracting by manifest.
+24 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 334ms
+25 silly audit report {
+25 silly audit report   axios: [
+25 silly audit report     {
+25 silly audit report       id: 1116673,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-3p68-rc4w-qgx5',
+25 silly audit report       title: 'Axios has a NO_PROXY Hostname Normalization Bypass that Leads to SSRF',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.0',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1116675,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-fvcv-3m26-pcqx',
+25 silly audit report       title: 'Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.0',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117574,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-w9j2-pvgh-6h63',
+25 silly audit report       title: 'Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117576,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-pmwg-cvhr-8vh7',
+25 silly audit report       title: 'Axios: Incomplete Fix for CVE-2025-62718 — NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0',
+25 silly audit report       severity: 'high',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117577,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-3w6x-2g7m-8v23',
+25 silly audit report       title: 'Axios: Invisible JSON Response Tampering via Prototype Pollution Gadget in `parseReviver`',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.2',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117578,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-q8qp-cvcw-x6jj',
+25 silly audit report       title: 'Axios has prototype pollution read-side gadgets in HTTP adapter that allow credential injection and request hijacking',
+25 silly audit report       severity: 'high',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.2',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117580,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-xhjh-pmcv-23jw',
+25 silly audit report       title: 'Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams',
+25 silly audit report       severity: 'low',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117581,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-445q-vr5w-6q77',
+25 silly audit report       title: 'Axios: CRLF Injection in multipart/form-data body via unsanitized blob.type in formDataToStream',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117583,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-m7pr-hjqh-92cm',
+25 silly audit report       title: 'Axios: no_proxy bypass via IP alias allows SSRF',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117585,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-62hf-57xw-28j9',
+25 silly audit report       title: 'Axios: unbounded recursion in toFormData causes DoS via deeply nested request data',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117587,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-5c9x-8gcm-mpgx',
+25 silly audit report       title: "Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0",
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117589,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-vf2m-468p-8v99',
+25 silly audit report       title: 'Axios: HTTP adapter streamed responses bypass maxContentLength',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117591,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-pf86-5x62-jrwf',
+25 silly audit report       title: 'Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking',
+25 silly audit report       severity: 'high',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117593,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-6chq-wfr3-2hj9',
+25 silly audit report       title: 'Axios: Header Injection via Prototype Pollution',
+25 silly audit report       severity: 'high',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1117595,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-xx6v-rp6x-q39c',
+25 silly audit report       title: 'Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coercion',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     }
+25 silly audit report   ],
+25 silly audit report   'follow-redirects': [
+25 silly audit report     {
+25 silly audit report       id: 1116560,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-r4q5-vmmm-2653',
+25 silly audit report       title: 'follow-redirects leaks Custom Authentication Headers to Cross-Domain Redirect Targets',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '<=1.15.11',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     }
+25 silly audit report   ]
+25 silly audit report }
+26 silly packumentCache corgi:https://registry.npmjs.org/axios cache-miss
+27 silly packumentCache corgi:https://registry.npmjs.org/follow-redirects cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/follow-redirects 97ms (cache miss)
+29 silly packumentCache corgi:https://registry.npmjs.org/follow-redirects set size:undefined disposed:false
+30 http fetch GET 200 https://registry.npmjs.org/razorpay/-/razorpay-2.9.6.tgz 732ms (cache miss)
+31 http fetch GET 200 https://registry.npmjs.org/axios 498ms (cache miss)
+32 silly packumentCache corgi:https://registry.npmjs.org/axios set size:undefined disposed:false
+33 silly packumentCache corgi:https://registry.npmjs.org/razorpay cache-miss
+34 http fetch GET 200 https://registry.npmjs.org/razorpay 141ms (cache miss)
+35 silly packumentCache corgi:https://registry.npmjs.org/razorpay set size:undefined disposed:false
+36 silly ADD node_modules/razorpay
+37 verbose cwd C:\Users\vishw\OneDrive\Desktop\newz\server
+38 verbose os Windows_NT 10.0.26200
+39 verbose node v24.12.0
+40 verbose npm  v11.6.2
+41 verbose exit 0
+42 info ok
